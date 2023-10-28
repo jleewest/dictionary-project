@@ -17,7 +17,6 @@ function App() {
             href='https://github.com/jleewest/weather-app-react-project'
             target='_blank'
             className='code-link'
-            rel='noreferrer'
           >
             Open source code
           </a>{' '}

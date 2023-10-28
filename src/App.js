@@ -7,7 +7,12 @@ function App() {
     <div className='App'>
       <div className='container'>
         <header className='App-header'>
-          <img src={dictionary} className='header-image img-fluid' />
+          <img
+            src={dictionary}
+            className='header-image img-fluid'
+            alt='dictionary'
+            rel='noreferrer'
+          />
         </header>
         <main>
           <Dictionary />

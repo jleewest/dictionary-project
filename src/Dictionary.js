@@ -13,8 +13,7 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword} definition`);
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -24,10 +23,17 @@ export default function Dictionary() {
 
   return (
     <div className='Dictionary'>
-      <form onSubmit={search}>
-        <input type='search' onChange={handleKeywordChange} />
-      </form>
-      <Results results={results} />
+      <section>
+        <h1>What would you like to look up?</h1>
+        <form onSubmit={search}>
+          <input
+            type='search'
+            onChange={handleKeywordChange}
+            placeholder='Suggestions: sunset, rafting, yoga, coding'
+          />
+        </form>
+        <Results results={results} />
+      </section>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(249 249 210 / 18%);
+}
+
+.App-header {
+  margin: 10px;
+}
+
+.App .header-image {
+  background-size: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App footer {
+  font-size: 11px;
+}
+
+.App .code-link {
+  font-weight: 800;
+  text-decoration: none;
+}
